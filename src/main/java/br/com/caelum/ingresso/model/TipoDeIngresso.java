@@ -15,6 +15,10 @@ public enum TipoDeIngresso {
 
 	private final Desconto desconto;
 	
+	TipoDeIngresso(Desconto desconto){
+		this.desconto = desconto;
+	}
+	
 	public BigDecimal aplicaDesconto(BigDecimal valor){
 		return desconto.aplicarDescontoSobre(valor);
 	}

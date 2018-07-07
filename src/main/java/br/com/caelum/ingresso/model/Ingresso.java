@@ -3,18 +3,19 @@ package br.com.caelum.ingresso.model;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-
-import br.com.caelum.ingresso.model.descontos.Desconto;
 
 @Entity
 public class Ingresso{
 
 	@Id
-	@GenerateValue
-	private INteger id;
+	@GeneratedValue
+	private Integer id;
 	
 	@ManyToOne
 	private Sessao sessao;
