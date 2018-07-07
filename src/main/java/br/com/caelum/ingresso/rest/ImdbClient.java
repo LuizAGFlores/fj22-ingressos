@@ -3,12 +3,14 @@ package br.com.caelum.ingresso.rest;
 import java.util.Optional;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import br.com.caelum.ingresso.model.DetalhesDoFilme;
 import br.com.caelum.ingresso.model.Filme;
 
+@Component
 public class ImdbClient {
 
 	private Logger logger = Logger.getLogger(ImdbClient.class);
