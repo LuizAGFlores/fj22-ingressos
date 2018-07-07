@@ -21,7 +21,7 @@
 	<mvc:annotation-driven conversion-service="conversionService" />
 	<mvc:default-servlet-handler/>
 
-	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactory">
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
 		<property name="converters">
 			<set merge="true">
 				 <bean class="br.com.caelum.ingresso.converter.YearMonthConverter" />
